@@ -5,7 +5,7 @@ If you want to RUN the information collection for ONE ACCOUNT onto a SINGLE REGI
   2)  You will get the files with the format <account-id>_<region>_<topic>_info.txt
   
   Execute the script as follows, for example:
-    ./my_run_scripts.sh eu-west-1
+    ./run_single_region.sh eu-west-1
 
 If you want to RUN the information collection for ONE ACCOUNT onto MULTIPLE REGIONS:
   1) Edit the file regions.txt and define the regions where you want to collect the information.
@@ -15,6 +15,6 @@ If you want to RUN the information collection for ONE ACCOUNT onto MULTIPLE REGI
   4) You will get the files with the format <account-id>_<region>_<topic>_info.txt for EACH of the Regions.
 
     Execute the script as follows, for example:
-    ./multi_region_run.sh
+    ./run_multi_region.sh
 
   
