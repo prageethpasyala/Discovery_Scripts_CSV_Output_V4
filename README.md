@@ -15,6 +15,6 @@ If you want to RUN the information collection for ONE ACCOUNT onto MULTIPLE REGI
   4) You will get the files with the format <account-id>_<region>_<topic>_info.txt for EACH of the Regions.
 
     Execute the script as follows, for example:
-    ```./run_multi_region.sh```
+    ./run_multi_region.sh
 
   
