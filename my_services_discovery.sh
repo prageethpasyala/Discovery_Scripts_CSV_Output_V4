@@ -35,7 +35,7 @@ end_date=$(date -d "$start_date +1 month -1 day" '+%Y-%m-%d')
 
 # Output CSV file
 output_file=$2
-echo -e "\n---------------------------UsedServices 1 month ago---------------------------" >> $output_file
+echo -e "\nRecently used services - 1 Month ago" > $output_file
 # Get the cost and usage report for the last month
 aws ce get-cost-and-usage \
   --time-period "Start=$start_date,End=$end_date" \
@@ -45,6 +45,6 @@ aws ce get-cost-and-usage \
   --region $AWS_REGION \
   --output json \
   | jq -r '.ResultsByTime[].Groups[] | select(.Metrics.UsageQuantity.Amount > 0) | .Keys[0]' \
-  | tr '\t' ',' > "$output_file"
+  | tr '\t' ',' >> "$output_file"
 
 echo "AWS usage report for $start_date to $end_date has been saved to $output_file"
