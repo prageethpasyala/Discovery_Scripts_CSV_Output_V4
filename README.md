@@ -17,5 +17,5 @@ If you want to RUN the information collection for ONE ACCOUNT onto MULTIPLE REGI
     Execute the script as follows, for example:
     ./run_multi_region.sh
 
-  To zip output data, cd into the Discovery_Reports folder in root directory and run following command
+  To zip output data, cd into the Discovery_Reports folder in root directory and run 
     ``` zip -r discovery_reports.zip . ```
