@@ -18,4 +18,4 @@ If you want to RUN the information collection for ONE ACCOUNT onto MULTIPLE REGI
     ./run_multi_region.sh
 
   To zip output reports
-    ``` zip -r gfg.zip . ```
+    ``` zip -r discovery_reports.zip . ```
